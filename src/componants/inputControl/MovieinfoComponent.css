@@ -1,0 +1,59 @@
+.mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 30px;
+    padding-top: 5%;
+    justify-content: left;
+    border-bottom: 1px solid lightgray;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: white;
+}
+
+.movieName {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin: 15px 0;
+    white-space: nowrap;
+    color: white;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.closeSpan {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    background: #444040 ;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 588px) {
+    .mainContainer {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .movieInfo {
+        text-align: left;
+        gap: 8px;
+        word-wrap: break-word;
+    }
+
+}

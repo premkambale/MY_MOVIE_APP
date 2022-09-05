@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
+ .App {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .Container {
+     width: 100%;
+     height: auto;
+     background-color: rgb(33, 37, 33);
+     overflow-y: scroll;
+     position: absolute;
+     top: 0px;
+     
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .header {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     background-color: black;
+     height: 10vh;
+     width: 100%;
+     color: white;
+     position: fixed;
+ }
+ .header .head
+ {
+    font-size: 30px;
+    font-family: 'Aboreto', cursive;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
+
+ .search   {
+     display: flex;
+     flex-direction: row;
+     padding: 5px;
+     background-color: white;
+     width: 34%;
+     border-radius: 5px;
+ }
+ .search input{
+    width: 100%;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    font-family: 'Aboreto', cursive;
+
+ }
+ /* .search:hover{
+    box-shadow: 1px 1px 2px white;
+ } */
+
+
+ .movieList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Aboreto', cursive;
+
+    padding: 30px;
+    justify-content: space-evenly;
+    color: white;
+
+ }
+
+ @media only screen and (max-width: 588px){
+   .movieContainer {
+      width: 80%;
+   }
+    .search   {
+        padding: 3px;
+        width: 35%;
+        border-radius: 5px;
+    }
+    .search input{
+       font-size: 1.1rem;
+    }
+ }
